@@ -1,0 +1,17 @@
+<snippet>
+    <content><![CDATA[
+import React, { PureComponent } from 'react';
+
+export class ${1:${TM_FILENAME/(.+)\..+|.*/$1/:ComponentName}} extends PureComponent {
+	render() {
+		return ${2:(
+			${3:<div>${0}</div>}
+		);}
+	}
+}
+
+]]></content>
+    <tabTrigger>rcc</tabTrigger>
+    <scope>source.js -(meta)</scope>
+    <description>React: pure class component</description>
+</snippet>
